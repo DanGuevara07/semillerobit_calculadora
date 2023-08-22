@@ -11,32 +11,34 @@
         Calculadora Simple
     </header>
     <main>
-        <div>
-            <label for="firstNumber">Ingrese el primer número</label>
-            <input id="firstNumber" type="text">
-
-        </div>
-        <div>
-            <label for="operator">Seleccione un operador</label>
-            <button id="operator"> + </button>
-
-        </div>
-        <div>
-            <label for="secondNumber">Ingrese el segundo número</label>
-            <input id="secondNumber" type="text">
-
-        </div>
-        <div>
-            <h4>Resultado</h4>
-            <div class="result"></div>
+        <div class="container">
+            <div>
+                <label for="firstNumber">Ingrese el primer número</label>
+                <input id="firstNumber" type="number">
+    
+            </div>
+            <div>
+                <label for="operator">Seleccione un operador</label>
+                <button id="operator"> + </button>
+    
+            </div>
+            <div>
+                <label for="secondNumber">Ingrese el segundo número</label>
+                <input id="secondNumber" type="number">
+    
+            </div>
+            <div class="result-container">
+                <h4>Resultado</h4>
+                <div class="result"></div>
+            </div>
         </div>
         <div class="modal">
             <h1>Seleccione su operación</h1>
             <div>
-                <button>+</button>
-                <button>-</button>
-                <button>*</button>
-                <button>/</button>
+                <button class="selectButton">+</button>
+                <button class="selectButton">-</button>
+                <button class="selectButton">*</button>
+                <button class="selectButton">/</button>
             </div>
             
         </div>

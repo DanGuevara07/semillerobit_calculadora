@@ -43,12 +43,27 @@ main div{
     gap: 1rem;
 
 }
+.container{
+    background-color: bisque;
+    padding: 10%;
+    border-radius: 10%;
+}
 
 main input{
     border: none;
     border-bottom: 1px solid black;
     font-size: large;
+    text-align: center;
 
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+  appearance: none;
 }
 
 main button{
@@ -68,17 +83,27 @@ main button:hover{
 .modal{
     background-color: gray;
     border-radius: 5%;
-    padding: 5%;
+    padding: 8%;
     display: none;
     position: absolute;
     top: 35%;
+    transition: 1s;
 }
 .modal div{
     height: 100%;
-    width: 70%;
-    flex-direction: row;
+    display: grid;
+    margin-top: 5%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 150%;
+    justify-items: center;
 }
-
+.modal div button{
+    height: 100%;
+    width: 80%;
+}
+.result{
+    font-size: 150%;
+}
 footer{
     color: white;
     width: 100%;
@@ -86,7 +111,19 @@ footer{
     justify-content: center;
     padding: 2%;
     background-color: rgb(106, 106, 221);
+    
 }
 
+@media only screen and (min-width: 808px) {
+    .container{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2,1fr);
+        row-gap: 40%;
+    }
+    .result-container{
+        grid-area: 2 / 2/ 3 / 3;
+    }
 
+}
 
